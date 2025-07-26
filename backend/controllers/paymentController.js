@@ -20,7 +20,7 @@ export const verifyKhaltiPayment = async (req, res) => {
 
         const transactionId = khaltiResponse.data.idx;
 
-        // Save payment info
+        // Save payment information
         const payment = new Payment({
             patientId,
             amount,
